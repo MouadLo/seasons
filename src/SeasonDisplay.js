@@ -23,6 +23,7 @@ const getSeason = (lat, month) => {
 const SeasonDispaly = ({ lat }) => {
 	const season = getSeason(lat, new Date().getMonth());
 	const { text, iconName } = seasonConfig[season];
+
 	return (
 		<div className={`season-display ${season}`}>
 			<i className={`icon-left massive ${iconName} icon`} />
